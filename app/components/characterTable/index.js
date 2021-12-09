@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 
 const getOccupations = (occupations) => (
     occupations.map( o => <p>{o}</p>)
@@ -29,4 +29,4 @@ const CharacterTable = ({characters}) => {
     );
 }
 
-export default CharacterTable;
+module.exports = CharacterTable;
