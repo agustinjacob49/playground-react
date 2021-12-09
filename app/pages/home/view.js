@@ -1,10 +1,10 @@
-import CharacterTable from '../../components/characterTable/index';
 const React = require('react');
 const { useEffect, useState } = require('react');
 const { fetchMovies } = require('./hooks/fetchMovies');
+const CharacterTable = require('../../components/characterTable');
 
 
-const Home = () => {
+const View = (props) => {
     const [response, setResponse] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -34,4 +34,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+module.exports = View;

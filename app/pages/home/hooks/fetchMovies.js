@@ -1,4 +1,4 @@
-const { searchByString } = require('./../../../services/movies');
+const { searchByString } = require('../../../services/movies');
 
 const fetchMovies = ({ query }) => searchByString(query)
 .then(response => (response))
